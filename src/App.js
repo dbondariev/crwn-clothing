@@ -1,55 +1,43 @@
-
+import React from 'react';
+import './categories.styles.scss';
 
 const App = () => {
-
-  const categoroes = [
+  const categories = [
     {
-      title: 'Hats',
-      imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
       id: 1,
-      linkUrl: 'shop/hats'
+      title: 'Hats',
     },
     {
-      title: 'Jackets',
-      imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
       id: 2,
-      linkUrl: 'shop/jackets'
+      title: 'Jackets',
     },
     {
-      title: 'Sneakers',
-      imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
       id: 3,
-      linkUrl: 'shop/sneakers'
+      title: 'Sneakers',
     },
     {
-      title: 'Womans',
-      imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
-      size: 'large',
       id: 4,
-      linkUrl: 'shop/womans'
+      title: 'Womens',
     },
     {
-      title: 'Mens',
-      imageUrl: 'https://i.ibb.co/R//Mens.png',
-      size: 'large',
       id: 5,
-      linkUrl: 'shop/mens'
-    }
-  ]
+      title: 'Mens',
+    },
+  ];
 
   return (
-    <div className="categoroes-containmer">
-      {categoroes.map(({title, imageUrl, id, size}) => (
-      <div className="category-container">
-        <div className="background-image"/>
-        <div classname="category-body-container">
-          <h2>{title}</h2>
-          <p>Shop Now</p>
+    <div className='categories-container'>
+      {categories.map(({ title }) => (
+        <div className='category-container'>
+          <div className='background-image' />
+          <div className='category-body-container'>
+            <h2>{title}</h2>
+            <p>Shop Now</p>
+          </div>
         </div>
-      </div>
       ))}
     </div>
   );
-}
+};
 
 export default App;
