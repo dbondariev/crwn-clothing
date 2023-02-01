@@ -1,14 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.scss';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 
-ReactDOM.render(
+// Redux
+import { Provider } from "react-redux"; // the default provider in redux
+import { store, persistor } from "./store/store";
+
+import "./index.scss";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { PersistGate } from "redux-persist/integration/react";
+
+// stripe
+import { Elements } from "@stripe/react-stripe-js";
+import { stripePromise } from "./utils/stripe.utils";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <Provider store={store}>
+      <PersistGate persistor={persistor}>
+        <BrowserRouter>
+          <Elements stripe={stripePromise}>
+            <App />
+          </Elements>
+        </BrowserRouter>
+      </PersistGate>
+    </Provider>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

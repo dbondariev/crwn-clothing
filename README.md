@@ -1,70 +1,168 @@
-# Getting Started with Create React App
+# Crwn-Clothing
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div id="top"></div>
 
-## Available Scripts
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)
+![Redux Saga](https://img.shields.io/badge/Redux%20saga-86D46B?style=for-the-badge&logo=redux%20saga&logoColor=999999)
+![styled-components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+![Firebase](https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black)
+![Stripe](https://img.shields.io/badge/Stripe-626CD9?style=for-the-badge&logo=Stripe&logoColor=white)
 
-In the project directory, you can run:
+<!-- PROJECT LOGO -->
+<div align="center">
 
-### `npm start`
+<a href="https://crwn-clothing-lovat.vercel.app/">
+    <img src="./src/assets/crown.svg" alt="Logo" height="50"  >
+  </a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  <h2 align="center">Crwn-Clothing</h2>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  <p align="center">
+  <a href="https://crwn-clothing-lovat.vercel.app/">View Demo</a>
+    ·
+    <a href="https://github.com/abdrahmansoltan/Crwn-Clothing/issues">Report Bug</a>
+  </p>
+</div>
 
-### `npm test`
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#stripe">Stripe</a></li>
+      </ul>
+    </li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- ABOUT THE PROJECT -->
 
-### `npm run build`
+## About The Project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Full Stack E-Commerce Clothing shop made using React & firebase with Stripe payments implemented.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Preview](./src/assets/Preview.PNG)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Built With
 
-### `npm run eject`
+- React
+- React Router
+- Redux
+- Redux Saga
+- Styled-Components
+- Firebase
+- Stripe
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<!-- GETTING STARTED -->
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Getting Started
 
-## Learn More
+This project require some prequesites and dependenscies to be installed, you can find the instructions below
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project require some prequesites and dependenscies to be installed, you can view it online using this [demo](https://crwn-clothing-lovat.vercel.app/). or you can find the instructions below:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+> To get a local copy, follow these simple steps :
 
-### Code Splitting
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### installing Locally
 
-### Analyzing the Bundle Size
+1. Clone the repo
+   ```sh
+   git clone https://github.com/abdrahmansoltan/Crwn-Clothing.git
+   ```
+2. go to project folder
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```sh
+   cd Crwn-Clothing
+   ```
 
-### Making a Progressive Web App
+3. install dependenscies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```bash
+   npm install
+   ```
 
-### Advanced Configuration
+4. Enviromental Variables Set up
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   - Here are the environmental variables that needs to be set in a `.env` file. This is the default setting that I used for development, but you can change it to what works for you.
 
-### Deployment
+   ```
+   REACT_APP_STRIPE_PUBLISHABLE_KEY="your stripe publish key "
+   STRIPE_SECRET_KEY="your stripe secret key "
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+5. Run development server
 
-### `npm run build` fails to minify
+   ```sh
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- To run **serverless function** locally, use [Vercel CLI](https://vercel.com/cli)
+
+  ```sh
+  # install CLI-tool globally
+  npm i -g vercel
+
+  # login with you account
+  vercel login
+
+  # run development server with serverless function
+  vercel dev
+  ```
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+---
+
+### Stripe
+
+- To use test-payment use any dummmy data like these:
+  - Card Number: `4242 4242 4242 4242`
+  - MM/YY: `Any date in the future`
+  - CVC: `424`
+  - ZIP: `42424`
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+---
+
+<!-- CONTRIBUTING -->
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGMENTS -->
+
+## Acknowledgments
+
+- [Yihua Zhang](https://github.com/ZhangMYihua)
