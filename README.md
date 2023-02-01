@@ -165,4 +165,4 @@ Don't forget to give the project a star! Thanks again!
 
 ## Acknowledgments
 
-- [Yihua Zhang](https://github.com/ZhangMYihua)
+- [Dima Bondariev](https://github.com/dbondariev)
