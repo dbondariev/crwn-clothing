@@ -86,7 +86,7 @@ This project require some prequesites and dependenscies to be installed, you can
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/abdrahmansoltan/Crwn-Clothing.git
+   git clone https://github.com/dbondariev/crwn-clothing.git
    ```
 2. go to project folder
 
