@@ -6,6 +6,7 @@ import Navigation from "./routes/navigation/navigation.componet";
 import Authentication from "./routes/authentication/authentication.component";
 import Shop from "./routes/shop/shop.component";
 import Checkout from "./routes/checkout/checkout.component.jsx";
+import Profle from "./routes/profile/profile.component.jsx"
 
 import { useEffect } from "react";
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="shop/*" element={<Shop />} />
           <Route path="auth" element={<Authentication />} />
           <Route path="checkout" element={<Checkout />} />
+          <Route path="profile" element={<Profle />} />
         </Route>
       </Routes>
     </>

@@ -3,6 +3,7 @@ import { selectCartItems } from "../../store/cart/cart.selector";
 import { addItemToCart } from "../../store/cart/cart.action";
 
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
+import { selectCurrentUser } from "../../store/user/user.selector";
 
 import {
   ProductCartContainer,
@@ -17,7 +18,17 @@ const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
   const cartItems = useSelector(selectCartItems);
 
-  const addProductToCart = () => dispatch(addItemToCart(cartItems, product));
+  const currentUser = useSelector(selectCurrentUser);
+
+
+  const itemToBasket = () => {
+    if (currentUser) {
+      dispatch(addItemToCart(cartItems, product));
+    } else {
+      alert("Please login to add items to cart");
+    }
+  };
+
 
   return (
     <ProductCartContainer>
@@ -28,7 +39,7 @@ const ProductCard = ({ product }) => {
       </Footer>
       <Button
         buttonType={BUTTON_TYPE_CLASSES.inverted}
-        onClick={addProductToCart}
+        onClick={itemToBasket }
       >
         Add to card
       </Button>
