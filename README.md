@@ -20,8 +20,7 @@
   <h2 align="center">Crwn-Clothing</h2>
 
   <p align="center">
-  <a href="https://crwn-clothing-lovat.vercel.app/">View Demo</a>
-    ·
+  <a href="https://crw-shop.netlify.app/">View Demo</a>
     <a href="https://github.com/abdrahmansoltan/Crwn-Clothing/issues">Report Bug</a>
   </p>
 </div>
